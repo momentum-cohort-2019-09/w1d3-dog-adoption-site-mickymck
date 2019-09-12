@@ -1,0 +1,108 @@
+* {
+    font-family: "Oswald", open-sans;
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main-header {
+    background: rgb(39, 39, 179);
+    border-bottom: 20px skyblue;
+    padding: 20px;
+    color:  white;
+}
+
+.filters {
+    background: lightgrey;
+    padding: 40px;
+    margin-bottom: 10px;
+}
+
+.criteria {
+    display: flex;
+    height: 170px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.criteria-options {
+    list-style-type: none;
+    text-align: left;
+}
+
+/* h4 {
+    text-align: left;
+    font-style: bold;
+} */
+
+.profiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-gap: 2px;
+}
+
+.dog-profile {
+    margin-bottom: 80px;
+}
+
+.dog-img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* h5 {
+    text-align: left;
+    font-style: bold;
+} */
+
+.beans-traits {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns:  100px 100px 100px 100px;
+}
+
+.footer {
+    display: flex;
+    text-align: center;
+    font: white;
+    height: 300px;
+}
+
+.footer > div {
+    flex: 1;
+    color: white;
+    font-size: 42px;
+    font-style: bold;
+    margin: 0;
+}
+
+.footer > div > p {
+    padding-top: 90px;
+}
+
+.donate {
+    background: linear-gradient(rgb(145, 135, 255, .6),rgba(145, 135, 255, .6)), center/cover url(starter_files/images/donate.jpg);
+}
+
+.volunteer {
+    background: linear-gradient(rgba(145, 135, 255, .6),rgba(145, 135, 255, .6)), center/cover url(starter_files/images/volunteer.jpg);
+}
+
+.location {
+    background: linear-gradient(rgba(145, 135, 255, .6),rgba(145, 135, 255, .6)), center/cover url(starter_files/images/location.png);
+}
+
+/* my issues:
+
+- why is my h4 bold but my h5 not bold? neither seems to be affected by my CSS selectors
+
+- how do I align text vertically using flexbox? I tried in the footer, but couldn't figure it out
+
+- why won't "repeat" work in my grid for beans-traits? when I type repeat(4, 100px); it doesn't work at all, but when I type it out (100px 100px 100px 100px) it works
+
+- why are my profiles not all a standard size? I've made my grid 1fr 1fr 1fr which I assume would make them equal width, but for some reason my far left profile is 435px while the other two are 360px
+
+*/
